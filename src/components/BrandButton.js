@@ -46,7 +46,7 @@ const BrandButton = ({ className, brandIcon, notification }) => {
 
                 /* (mobile) */
                 else {
-                    posts.style.marginLeft = "10px";
+                    posts.style.marginLeft = "7vw";
                 }
 
                 /* enable all brand buttons again */
