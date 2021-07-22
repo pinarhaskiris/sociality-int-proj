@@ -10,8 +10,8 @@ const BrandButton = ({ className, brandIcon, notification }) => {
         const [selected, setSelected] = useState(false)
    
         const onClick = (e) => {
-            const posts = document.getElementById("posts");
-            const brandButtons = document.querySelectorAll(".brandBarItem");
+            const posts = document.getElementById("posts"); /* to slide the posts right */
+            const brandButtons = document.querySelectorAll(".brandBarItem"); /* to enable/disable brand buttons */
     
             /* brand selected, open menu */
             if (!selected && e.currentTarget.className === "brandBarItem") {
@@ -44,6 +44,11 @@ const BrandButton = ({ className, brandIcon, notification }) => {
                     posts.style.transition = "margin 0.5s";
                 }
 
+                /* (mobile) */
+                else {
+                    posts.style.marginLeft = "10px";
+                }
+
                 /* enable all brand buttons again */
                 for (let i = 0; i < brandButtons.length; i++) {
                     brandButtons[i].disabled = false;
@@ -52,7 +57,7 @@ const BrandButton = ({ className, brandIcon, notification }) => {
         }
 
     /* 
-    * display menu if button selected
+    * display accordion menu if button selected
     * display notification if there are any
     * hide the notification on brand icon when menu is open
     */

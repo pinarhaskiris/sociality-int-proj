@@ -2,7 +2,6 @@ import BrandButton from './BrandButton';
 import { FaApple, FaDropbox, FaPlaystation, FaLinux, FaWindows, FaRedditAlien } from 'react-icons/fa';
 
 const BrandBar = () => {
-
     return (
         <div id="brandBar">
             <BrandButton className="brandBarItem" brandIcon={<FaApple />} notification="0" />

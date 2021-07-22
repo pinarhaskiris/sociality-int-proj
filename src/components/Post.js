@@ -27,6 +27,7 @@ likes, comments, shares, views }) => {
 
     /* determining the status tag and tag color */
     let statusClass;
+    
     if (status === "scheduled") {
         statusClass = "statusTag scheduled"
     }
@@ -42,7 +43,7 @@ likes, comments, shares, views }) => {
     else if (status === "need approval") {
         statusClass = "statusTag needAp"
     }
-    else { /* unknown */
+    else { /* unknown status */
         statusClass = "statusTag unknown"
     }
 
@@ -75,7 +76,7 @@ likes, comments, shares, views }) => {
                     </div>
                     <span className={statusClass}>{status}</span>
                 </div>
-                
+
             </div>
         </div>
     )

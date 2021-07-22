@@ -2,8 +2,8 @@ import socialityLogo from '../img/sociality_logo.png'
 import pp from '../img/pp.png'
 
 /* 
-* left part: sociality logo and status info
-* right part: user profile photo
+* topBarLeftPart: sociality logo and status info
+* topBarRightPart: user profile photo
 */
 
 const TopBar = () => {

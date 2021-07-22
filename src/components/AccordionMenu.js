@@ -4,10 +4,10 @@ import Notification from './Notification';
 
 const AccordionMenu = ({ notification }) => {
     return (
-        <div class="accordionMenu">
+        <div className="accordionMenu">
             <div className="withNotification">
                 <MenuButton iconStart={<FaRegBell />} text={"NOTIFICATIONS"}
-                
+
                 /* if there are notifications, show them. if there aren't any, just put a plus sign */
                 iconEnd={notification !== "0" ? <Notification n={notification} brand={false} /> : <FaPlus />}/>
             </div>

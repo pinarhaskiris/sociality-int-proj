@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { FaPlus, FaMinus } from 'react-icons/fa';
-import Button from './Button';
+import { FaMinus } from 'react-icons/fa';
 
 /* used for the buttons in accordion menu */
 const MenuButton = ({ iconStart, text, iconEnd }) => {
@@ -9,6 +8,7 @@ const MenuButton = ({ iconStart, text, iconEnd }) => {
     const [selected, setSelected] = useState(false)
     const onSelected = () => {setSelected(!selected)}
 
+    /* arrowDown: little triangle at the bottom of the selected menu item */
     return (
         <button className={selected ? "menuItem selectedMenuItem" : "menuItem"} onClick={onSelected}>
             <div className={selected ? "buttonContent selectedMenuBtn" : "buttonContent"}>
@@ -20,16 +20,16 @@ const MenuButton = ({ iconStart, text, iconEnd }) => {
             </div>
             { selected ? <div className="arrowDown"></div> : null }
             { selected ? <Dropdown /> : null }
-        </button>
+        </button>  
     )
 }
 
 const Dropdown = () => {
     return (
-        <div className="subMenu">
-            <Button className="subMenuBtn" text="Compose"/>
-            <Button className="subMenuBtn" text="Feed"/>
-        </div>
+        <ul>
+            <li className="subMenuBtn"> Compose </li>
+            <li className="subMenuBtn"> Feed </li>
+        </ul>
     )
 }
 
