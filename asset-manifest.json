@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/sociality-int-proj/static/css/main.1236c0b7.chunk.css",
-    "main.js": "/sociality-int-proj/static/js/main.008b33a6.chunk.js",
-    "main.js.map": "/sociality-int-proj/static/js/main.008b33a6.chunk.js.map",
+    "main.css": "/sociality-int-proj/static/css/main.68c829ef.chunk.css",
+    "main.js": "/sociality-int-proj/static/js/main.8e33188a.chunk.js",
+    "main.js.map": "/sociality-int-proj/static/js/main.8e33188a.chunk.js.map",
     "runtime-main.js": "/sociality-int-proj/static/js/runtime-main.1b1a8312.js",
     "runtime-main.js.map": "/sociality-int-proj/static/js/runtime-main.1b1a8312.js.map",
     "static/js/2.eede2f9d.chunk.js": "/sociality-int-proj/static/js/2.eede2f9d.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.3c38fca9.chunk.js": "/sociality-int-proj/static/js/3.3c38fca9.chunk.js",
     "static/js/3.3c38fca9.chunk.js.map": "/sociality-int-proj/static/js/3.3c38fca9.chunk.js.map",
     "index.html": "/sociality-int-proj/index.html",
-    "static/css/main.1236c0b7.chunk.css.map": "/sociality-int-proj/static/css/main.1236c0b7.chunk.css.map",
+    "static/css/main.68c829ef.chunk.css.map": "/sociality-int-proj/static/css/main.68c829ef.chunk.css.map",
     "static/js/2.eede2f9d.chunk.js.LICENSE.txt": "/sociality-int-proj/static/js/2.eede2f9d.chunk.js.LICENSE.txt",
     "static/media/confetti.33ee63af.png": "/sociality-int-proj/static/media/confetti.33ee63af.png",
     "static/media/dog.22ae3e8c.png": "/sociality-int-proj/static/media/dog.22ae3e8c.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.1b1a8312.js",
     "static/js/2.eede2f9d.chunk.js",
-    "static/css/main.1236c0b7.chunk.css",
-    "static/js/main.008b33a6.chunk.js"
+    "static/css/main.68c829ef.chunk.css",
+    "static/js/main.8e33188a.chunk.js"
   ]
 }
