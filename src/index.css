@@ -244,6 +244,9 @@ h3 { /* dates */
 
 #posts {
   margin: 80px 0px 0px 70px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 /* posts and the date */

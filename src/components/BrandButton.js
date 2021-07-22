@@ -46,7 +46,7 @@ const BrandButton = ({ className, brandIcon, notification }) => {
 
                 /* mobile */
                 else {
-                    posts.style.marginLeft = "35px";
+                    posts.style.marginLeft = "5%";
                     posts.style.transition = "margin 0.5s";
                 }
 
