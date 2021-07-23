@@ -11,21 +11,11 @@ const BrandButton = ({ className, brandIcon, notification }) => {
    
         const onClick = (e) => {
             const posts = document.getElementById("posts"); /* to slide the posts right */
-            const brandButtons = document.querySelectorAll(".brandBarItem"); /* to enable/disable brand buttons */
     
             /* brand selected, open menu */
-            if (!selected && e.currentTarget.className === "brandBarItem") {
+            if (!selected && document.querySelectorAll(".selectedBtn").length == 0) {
                 e.currentTarget.className = "brandBarItem selectedBtn";
                 setSelected(!selected)
-
-                /* to avoid having multiple menus open at once */
-                /* disable all brand buttons */
-                for (let i = 0; i < brandButtons.length; i++) {
-                    brandButtons[i].disabled = true;
-                }
-                
-                /* and enable the active one only */
-                document.querySelector(".selectedBtn").disabled = false;
 
                 /* slide the posts (if not mobile) */
                 if (window.innerWidth > 450) {
@@ -48,11 +38,6 @@ const BrandButton = ({ className, brandIcon, notification }) => {
                 else {
                     posts.style.marginLeft = "5%";
                     posts.style.transition = "margin 0.5s";
-                }
-
-                /* enable all brand buttons again */
-                for (let i = 0; i < brandButtons.length; i++) {
-                    brandButtons[i].disabled = false;
                 }
             }
         }
